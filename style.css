@@ -1,0 +1,442 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem 1rem 2rem;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 1rem;
+}
+ul {
+  display: flex;
+  gap: 3.5rem;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: hsl(243, 87%, 12%);
+}
+a:hover {
+  color: rgb(189,186,250);
+  transition: all ease-in;
+}
+.ctn1 {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem 3rem 2rem;
+  justify-content: space-between;
+}
+.illustration {
+  max-width: 42.5rem;
+}
+.intro {
+  max-width: 37rem;
+}
+.intro h2 {
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 1rem;
+  color: hsl(243, 87%, 12%);
+}
+.intro p {
+  font-family: 'Open-sans', sans-serif;
+  color: hsl(243, 87%, 12%);
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+input[type=email] {
+  box-sizing: border-box;
+  width: 20rem;
+  height: 3rem;
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 3px;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+input {
+  outline: none;
+}
+form {
+  position: relative;
+}
+form input[type=email]:invalid:not([value=""]) {
+  border: 1px solid red !important;
+  position: relative;
+  margin-bottom: 19px;
+}
+label::after {
+  content: 'Please check your email';
+  width: max-content;
+  left: 0;
+  opacity: 0;
+  top: 1.6875rem;
+  float: left;
+  color: red;
+  position: absolute;
+  font-size: 0.8125rem;
+  font-family: 'Raleway', sans-serif;
+}
+form input[type=email]:invalid:not([value=""])+label::after {
+  opacity: 1;
+}
+label {
+  position: relative;
+  display: inline;
+  position: absolute;
+  left: 0;
+  top: 1.25rem;
+}
+input[type=submit] {
+  width: 12.5rem;
+  height: 3rem;
+  background-color: hsl(224, 93%, 58%);
+  border: none;
+  border-radius: 0.1875rem;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Raleway',sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+input[type=submit]:hover {
+  background-color: hsla(224, 93%, 58%, 70%);
+  cursor: pointer;
+}
+.ctn2 {
+  padding: 1rem 2rem 0 2rem;
+  background-color: rgb(248,248,254);
+  display: flex;
+  justify-content: space-between;
+}
+.background-desktop img {
+  width: 100%;
+}
+.ctn2 h2 {
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 1rem;
+  color: hsl(243, 87%, 12%);
+}
+.intro-2 {
+  font-family: 'Open sans', sans-serif;
+  color: hsl(243, 87%, 12%);
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 37rem;
+}
+.intro-2 p {
+  padding-bottom: 1rem;
+}
+.intro-2 a{
+  color: hsl(170, 45%, 43%);
+  text-underline-offset: 0.25rem;
+  /* border: 1px solid red; */
+  display: flex;
+  width: 10.5rem;
+}
+i {
+  margin-top: 0.25rem;
+  margin-left: 0.1875rem;
+}
+.fylo {
+  transition: 0.2s;
+}
+.fylo:hover {
+  color: hsla(170, 60%, 67%, 0.7);
+  border-bottom: 1px solid hsla(170, 60%, 67%, 0.7);
+}
+.review {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.75rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  width: 22rem;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.0625rem 0.3125rem hsl(0, 1%, 86%);
+}
+.thumbnail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.thumbnail img {
+  width: 1.875rem;
+  border-radius: 2rem;
+}
+.thumbnail div:nth-of-type(2) p {
+  padding: 0;
+}
+.icon-quotes {
+  padding: 0.5rem 0;
+  width: 0.9rem;
+}
+.name {
+  font-weight: 700;
+  font-size: 0.625rem;
+  color: hsl(243, 87%, 12%);
+}
+.position {
+  font-size: 0.625rem;
+}
+.ctn3 {
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(240, 75%, 98%);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20rem;
+}
+.ctn3 h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.75rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+}
+.ctn3 p {
+  font-family: 'Open sans', sans-serif;
+  font-size: 1rem;
+  width: 33rem;
+}
+.intro-3 {
+  width: 40%;
+}
+.ctn3 .email-input {
+  width: 50%;
+  margin-left: 10rem;
+}
+.ctn3 input[type=email] {
+  width: 30rem;
+}
+.button {
+  border: 0.0625rem solid red;
+}
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-family: 'Open sans', sans-serif;
+  height: 25rem;
+  color: hsl(240, 75%, 98%);
+  background-color: hsl(243, 87%, 12%);
+}
+.attribution {
+  width: 50%;
+  position: absolute;
+  bottom: 1rem;
+  left: 25%;
+}
+.about-us a{
+  color: hsl(240, 75%, 98%);
+}
+.about-us {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  align-self: start;
+  height: 10rem;
+}
+.about-us a:hover {
+  color:hsla(224, 91%, 64%, 0.9)
+}
+.about-us .left, .about-us .right {
+  display: flex;
+  flex-direction: column;
+}
+.info, .about-us, .social-media {
+  height: 100%;
+  width: 33.3%;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+.fa-twitter, .fa-instagram {
+  border: 0.0625rem solid white;
+  padding: 0.4rem;
+  border-radius: 2rem;
+}
+.fa-facebook-f {
+  border: 0.0625rem solid white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 2rem;
+}
+.fa-facebook-f:hover, .fa-instagram:hover, .fa-twitter:hover {
+  color:hsl(224, 93%, 58%);
+  border: 0.0625rem solid hsla(224, 91%, 64%, 0.9);
+  cursor: pointer;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: hsl(240, 75%, 98%);
+}
+.address, .phone {
+  display: flex;
+  gap: 1rem;
+  margin: 0.75rem 0;
+  align-items: center;
+}
+.address img, .phone img {
+  width: 1.2rem;
+  height: fit-content;
+}
+.button {
+  margin-top: 1rem;
+}
+.ctn3 label::after{
+  color:hsl(240, 75%, 98%);
+}
+@media only screen and (max-width: 1210px) {
+  .ctn3 input[type=email] {
+    width: 25rem;
+  }
+ .ctn2 .illustration {
+  align-self: center;
+ }
+ .intro form {
+  display: flex;
+  gap: 0.25rem
+ }
+}
+@media only screen and (max-width: 62.5rem) {
+  .ctn1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .ctn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4rem;
+    background-color: rgb(248,248,254);
+  }
+  .intro-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ctn3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .intro-3 {
+    width: 100%;
+    text-align: center;
+  }
+  .intro-3 p{
+    margin: 0 auto;
+  }
+  .ctn3 .email-input {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .ctn3 input[type=submit] {
+    width: 25rem;
+  }
+  .review {
+    text-align: left;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: max-content;
+  }
+  .social-media {
+    align-self: center;
+  }
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 0rem;
+  }
+  .attribution {
+    bottom: 0rem;
+  }
+  .intro form {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .email-input form {
+    width: fit-content;
+  }
+  .intro input[type=submit] {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 46.875rem) {
+  .ctn1 .intro {
+    order: 2;
+  }
+  .intro .illustration {
+    order: 1;
+  }
+  .ctn2 .intro-2 {
+    order: 2;
+  }
+  .ctn1 input[type=submit] {
+    width: 20rem;
+  }
+  ul {
+    gap: 0.5rem
+  }
+  .ctn3 input[type=submit] {
+    width: 20rem;
+  }
+  .email-input {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .email-input label::after {
+    left: 0;
+  }
+  .intro label::after {
+    left: 0;
+  }
+  .intro form {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    width: 20rem;
+    margin: 0 auto;
+  }
+  .email-input input[type=email] {
+    width: 20rem;
+  }
+  .intro-3 p{
+    width: 23rem;
+  }
+  .info {
+    width: 23rem;
+  }
+  label::after {
+    text-align: center;
+  }
+  main {
+    width: fit-content;
+  }
+}
